@@ -69,7 +69,7 @@ Servir como un **puente de datos optimizado** para aplicaciones cliente (sistema
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/hubelsolis/brigesnote.git
+git clone https://github.com/york071125-tech/brigesnote.git
 cd brigesnote
 ```
 
