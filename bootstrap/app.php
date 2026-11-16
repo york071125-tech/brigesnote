@@ -17,6 +17,20 @@ $app = new Illuminate\Foundation\Application(
 
 /*
 |--------------------------------------------------------------------------
+| Public Path
+|--------------------------------------------------------------------------
+|
+| This project has no "public" folder: the front controller (index.php),
+| .htaccess and web.config live in the project root. Pointing the public
+| path at the root keeps "php artisan serve" and public_path() consistent
+| with that layout.
+|
+*/
+
+$app->usePublicPath($app->basePath());
+
+/*
+|--------------------------------------------------------------------------
 | Bind Important Interfaces
 |--------------------------------------------------------------------------
 |
