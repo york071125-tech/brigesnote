@@ -101,4 +101,17 @@ return [
 
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Serializable Classes
+    |--------------------------------------------------------------------------
+    |
+    | Laravel 13 hardening: PHP objects are not unserialized from the cache.
+    | This application only caches scalar values (e.g. the API rate limiter),
+    | so no classes need to be allowed here.
+    |
+    */
+
+    'serializable_classes' => false,
+
 ];

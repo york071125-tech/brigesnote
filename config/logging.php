@@ -21,6 +21,22 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Deprecations Log Channel
+    |--------------------------------------------------------------------------
+    |
+    | Channel used to log PHP and library deprecation warnings, so upcoming
+    | incompatibilities (e.g. with future PHP versions) can be detected.
+    | Disabled ("null") by default; set LOG_DEPRECATIONS_CHANNEL=stack to enable.
+    |
+    */
+
+    'deprecations' => [
+        'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+        'trace' => false,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Log Channels
     |--------------------------------------------------------------------------
     |
